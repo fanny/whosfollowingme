@@ -1,0 +1,13 @@
+{
+    "manifest_version": 2,
+    "name": "React Content Script",
+    "version": "0.1",
+    "description": "React Content Script",
+    "content_scripts": [
+      {
+        "matches": ["https://github.com/*"],
+        "css": ["build/static/css/main.0e04712c.css"],
+        "js": ["build/static/js/main.a04dd3a7.js"]
+      }
+    ]
+  }
