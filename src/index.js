@@ -6,18 +6,19 @@ import App from './container/App';
 
 const vcard = document.getElementsByClassName('p-nickname vcard-username d-block')[0];
 
-chrome.runtime.sendMessage({}, (response) => {
-    console.log(document.cookie);
-    console.log(response);
+let currentUser = '';
+chrome.runtime.sendMessage({}, async (response) => {
+    currentUser = await response.currentUser;
+    console.log(currentUser);
 });
 
 const app = document.createElement('div')
 
 app.id = 'root';
-let user = ''
+let toUser = ''
 if (vcard){ 
     vcard.appendChild(app); 
-    user = vcard.textContent;
+    toUser = vcard.textContent;
 };
 
-ReactDOM.render(<App user={user}/>, document.getElementById('root'));
+ReactDOM.render(<App toUser={toUser} currentUser={currentUser}/>, document.getElementById('root'));
