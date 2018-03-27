@@ -6,11 +6,23 @@ import App from './container/App';
 
 const vcard = document.getElementsByClassName('p-nickname vcard-username d-block')[0];
 
-let currentUser = '';
-chrome.runtime.sendMessage({}, async (response) => {
-    currentUser = await response.currentUser;
-    console.log(currentUser);
-});
+
+const doTask = async () => {
+    return new Promise((resolve, reject) => {
+        chrome.runtime.sendMessage({}, function (response) {
+            resolve(response.currentUser);
+        });
+    });
+};
+
+var currentUser = 'oii';
+const teste = async () => {
+    const user = await doTask();
+    currentUser = user;
+    return user;
+}
+
+console.log(currentUser);
 
 const app = document.createElement('div')
 
