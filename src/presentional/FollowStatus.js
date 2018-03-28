@@ -1,5 +1,5 @@
 import React from 'react';
-import './Follow.css'
+import './FollowStatus.css'
 
 export const UserFollows = (props) => (<span id='span-follow'>Follow you</span>);
 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { UserFollows, UserNotFollows } from '../presentional/Follow';
+import { UserFollows, UserNotFollows } from '../presentional/FollowStatus';
 import './App.css';
 
 class App extends Component {
