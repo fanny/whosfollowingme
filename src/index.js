@@ -7,22 +7,13 @@ import App from './container/App';
 const vcard = document.getElementsByClassName('p-nickname vcard-username d-block')[0];
 
 
-const doTask = async () => {
+const doTask = () => {
     return new Promise((resolve, reject) => {
-        chrome.runtime.sendMessage({}, function (response) {
+        chrome.runtime.sendMessage({}, (response) => {
             resolve(response.currentUser);
         });
     });
 };
-
-var currentUser = 'oii';
-const teste = async () => {
-    const user = await doTask();
-    currentUser = user;
-    return user;
-}
-
-console.log(currentUser);
 
 const app = document.createElement('div')
 
@@ -32,5 +23,7 @@ if (vcard){
     vcard.appendChild(app); 
     toUser = vcard.textContent;
 };
+doTask().then(response => { 
+    ReactDOM.render(<App toUser={toUser} currentUser={response}/>, document.getElementById('root'));
+}).catch(err =>{})
 
-ReactDOM.render(<App toUser={toUser} currentUser={currentUser}/>, document.getElementById('root'));

@@ -12,8 +12,8 @@ class App extends Component {
 
 
   componentDidMount(){
-    console.log(this.props.currentUser)
-    axios.get(`https://api.github.com/users/${this.props.toUser}/following/FannyVieira`)
+    
+    axios.get(`https://api.github.com/users/${this.props.toUser}/following/${this.props.currentUser}`)
       .then(
         response => this.setState({isFollower: response.status === 204})
       )
