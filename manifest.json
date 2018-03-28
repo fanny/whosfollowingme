@@ -6,16 +6,18 @@
     "minimum_chrome_version": "22",
     "permissions": [
           "cookies",
-          "https://github.com/*"
+          "*://github.com/*",
+          "tabs",
+          "webNavigation"
     ],
     "background": {
-      "scripts": ["src/background.js"]
+      "scripts": ["background.js"]
     },
     "content_scripts": [
       {
-        "matches": ["https://github.com/*"],
+        "matches": ["*://github.com/*"],
         "css": ["build/static/css/main.57215138.css"],
-        "js": ["build/static/js/main.c92eb29b.js"]
+        "js": ["build/static/js/main.59f78dd7.js"]
       }
     ]
   }

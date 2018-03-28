@@ -22,8 +22,9 @@ let toUser = ''
 if (vcard){ 
     vcard.appendChild(app); 
     toUser = vcard.textContent;
+    doTask().then(response => { 
+        ReactDOM.render(<App toUser={toUser} currentUser={response}/>, document.getElementById('root'));
+    }).catch(err =>{})
 };
-doTask().then(response => { 
-    ReactDOM.render(<App toUser={toUser} currentUser={response}/>, document.getElementById('root'));
-}).catch(err =>{})
+
 
