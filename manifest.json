@@ -14,7 +14,7 @@
     "content_scripts": [
       {
         "matches": ["https://github.com/*"],
-        "css": ["build/static/css/main.0e04712c.css"],
+        "css": ["build/static/css/main.57215138.css"],
         "js": ["build/static/js/main.dcde9ac6.js"]
       }
     ]
