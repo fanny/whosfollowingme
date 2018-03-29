@@ -6,7 +6,7 @@ chrome.runtime.onMessage.addListener((res, sender, sendResponse) => {
 
     return true;
 });
-
+//used when user switch in profile tabs 
 chrome.webNavigation.onHistoryStateUpdated.addListener((details) => {
-    chrome.tabs.executeScript(null, { file : "build/static/js/main.59f78dd7.js"});
+    chrome.tabs.executeScript(null, { file : "build/static/js/main.js"});
 });

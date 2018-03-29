@@ -13,12 +13,9 @@ class App extends Component {
 
   componentDidMount(){
     axios.get(`https://api.github.com/users/${this.props.toUser}/following/${this.props.currentUser}`)
-        .then(
-          response => this.setState({isFollower: response.status === 204})
-        ).catch(
-          error => console.log(error)
-        );
-  
+    .then(
+      response => this.setState({isFollower: response.status === 204})
+    ).catch(error => {}); 
   }
 
 

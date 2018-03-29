@@ -1,9 +1,10 @@
 {
     "manifest_version": 2,
-    "name": "React Content Script",
+    "name": "whosfollowyou?",
     "version": "0.1",
-    "description": "React Content Script",
+    "description": "An extension that allows view if one github user follows you",
     "minimum_chrome_version": "22",
+    "icons": { "128": "assets/images/icon.png" },
     "permissions": [
           "cookies",
           "*://github.com/*",
@@ -16,8 +17,8 @@
     "content_scripts": [
       {
         "matches": ["*://github.com/*"],
-        "css": ["build/static/css/main.57215138.css"],
-        "js": ["build/static/js/main.59f78dd7.js"]
+        "css": ["build/static/css/main.css"],
+        "js": ["build/static/js/main.js"]
       }
     ]
   }
