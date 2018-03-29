@@ -14,6 +14,7 @@
     "background": {
       "scripts": ["background.js"]
     },
+    "web_accessible_resources": ["../build/static/"],
     "content_scripts": [
       {
         "matches": ["*://github.com/*"],
@@ -21,4 +22,5 @@
         "js": ["build/static/js/main.js"]
       }
     ]
+    
   }
