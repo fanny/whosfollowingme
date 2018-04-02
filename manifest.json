@@ -4,7 +4,7 @@
     "version": "0.1",
     "description": "An extension that allows view if one github user follows you",
     "minimum_chrome_version": "22",
-    "icons": [ { "128": "assets/images/icon.png" } ],
+    "icons": { "128": "assets/images/icon.png" },
     "permissions": [
           "cookies",
           "*://github.com/*",
