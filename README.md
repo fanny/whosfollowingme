@@ -1,6 +1,6 @@
 ### Who's following me?  
 
-An chrome extension that allows view if one github user follows you. 
+A Chrome extension that allows you to view if other GitHub users follow you. 
 
 ## Demo
 
@@ -8,7 +8,7 @@ An chrome extension that allows view if one github user follows you.
 
 ## Usage
 
-* Clone/download the repo
-* Go to chrome://extensions in your browser
-* Ensure that the Developer mode checkbox in the top right-hand corner is checked
-* Click Load unpacked extension to pop up a file-selection dialog & select the directory.
+* Clone/download the repo;
+* Go to chrome://extensions in your browser;
+* Ensure that the Developer mode checkbox in the top right-hand corner is checked;
+* Click "Load unpacked extension" to pop up a file-selection dialog & select the directory that contains the source code of this repository.
