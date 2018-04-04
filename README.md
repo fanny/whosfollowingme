@@ -4,7 +4,7 @@ A Chrome extension that allows you to view if other GitHub users follow you.
 
 ## Demo
 
-![](https://i.imgur.com/YcBODbM.jpg) 
+![](https://i.imgur.com/vAvUucr.jpg) 
 
 ## Usage
 
