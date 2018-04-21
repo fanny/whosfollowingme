@@ -6,9 +6,14 @@ A Chrome extension that allows you to view if other GitHub users follow you.
 
 ![](https://i.imgur.com/vAvUucr.jpg) 
 
-## Usage
+## Installation
 
-* Clone/download the repo;
-* Go to chrome://extensions in your browser;
-* Ensure that the Developer mode checkbox in the top right-hand corner is checked;
-* Click "Load unpacked extension" to pop up a file-selection dialog & select the directory that contains the source code of this repository.
+This Chrome Extension can me installed directly [Chrome Web Store](https://chrome.google.com/webstore/detail/whosfollowingme/jnjdmaggkbjjbdghcpnlodobipcjaadk)
+
+## Contributors
+Thanks @mari-linhares and @JRobsonJr for making this extension possible. :green_heart: :green_heart: :hammer:
+
+ 
+:copyright: Copyright Fanny Batista Vieira.
+
+
