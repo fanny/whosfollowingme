@@ -17,6 +17,5 @@ if (vcard) {
 };
 
 getCookie().then(response => { 
-    console.log('ahahha', toUser, response);
     ReactDOM.render(<App toUser={toUser} currentUser={response} />, document.getElementById('root'));
 }).catch(err => {});
