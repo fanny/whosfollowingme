@@ -12,10 +12,11 @@ app.id = 'root';
 let toUser = '';
 
 if (vcard) { 
-    toUser = vcard.textContent;
+    toUser = vcard.textContent.trim();
     vcard.appendChild(app); 
 };
 
 getCookie().then(response => { 
+    console.log('ahahha', toUser, response);
     ReactDOM.render(<App toUser={toUser} currentUser={response} />, document.getElementById('root'));
 }).catch(err => {});
