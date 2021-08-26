@@ -12,7 +12,7 @@ app.id = 'root';
 let toUser = '';
 
 if (vcard) { 
-    toUser = vcard.textContent;
+    toUser = vcard.textContent.trim();
     vcard.appendChild(app); 
 };
 
